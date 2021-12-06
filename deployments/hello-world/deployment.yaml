@@ -15,6 +15,9 @@ spec:
       containers:
       - name: hello-world
         image: docker.io/sakomws/hello-world:0.1.0
+        resources:
+          requests:
+            cpu: "100m"
         imagePullPolicy: Always
         ports:
         - containerPort: 80
