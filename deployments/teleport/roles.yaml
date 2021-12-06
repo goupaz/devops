@@ -1,0 +1,12 @@
+kind: role
+version: v4
+metadata:
+  name: sako
+spec:
+  allow:
+    logins: ['admin']
+    kubernetes_groups: ['edit']
+    node_labels:
+      '*': '*'
+    kubernetes_labels:
+      '*': '*'
