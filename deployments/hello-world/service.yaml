@@ -6,7 +6,7 @@ spec:
   selector:
     app: hello-world
   ports:
-  - protocol: "HTTP"
+  - protocol: "TCP"
     port: 80
     targetPort: 5000
   type: ClusterIP
