@@ -18,3 +18,38 @@
 ## Goal
 - The assignment is open ended and the point of the exercise is to assess code modularity, usability, extensibility and debuggability. 
 - Working solution with scope/ideas for improvement and their pros/cons which will be discussed in a follow up meeting.
+
+Tooling
+- Teleport
+- Cert-manager
+- Istio
+- Meshery
+- Dockerhub
+- Terraform-cloud
+- GithubAction - CI
+- ArgoCD - CD
+- Harbor - Push/Pull
+- Monitoring - Istio ones
+  - Zipkin / Jaeger
+  - Grafana
+  - Prometheus
+  - Kiali
+  - Meshery
+- Helmfile / helm
+- Autoscaler
+- Vault/Console
+
+## Steps
+1. Bring cluster up in EKS:
+```
+cd infrastructure/terraform/environments/production/aws/accounts/aws_prod01/regions/us-east-1/compute/eks
+terraform init
+terraform plan
+terraformapply 
+```
+2. Add cluster to kubeconfig:
+```
+aws eks update-kubeconfig --name master-UE9fmXo5 --profile AdministratorAccess-645358331312
+```
+
+3.
