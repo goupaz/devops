@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: docker.io/sakomws/hello-world:0.1.0
+        image: docker.io/sakomws/hello-world:0.1.1
         imagePullPolicy: Always
         ports:
         - containerPort: 80
