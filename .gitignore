@@ -5,6 +5,7 @@
 *.tfstate
 *.tfstate.*
 **kubeconfig_*
+**teleport.yaml*
 # Crash log files
 crash.log
 
