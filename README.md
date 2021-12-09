@@ -37,6 +37,7 @@ Tooling
   - Meshery
 - Helmfile / helm
 - Autoscaler
+  - [karpenter](https://github.com/aws/karpenter) 
 - Vault/Console
 
 ## Steps
